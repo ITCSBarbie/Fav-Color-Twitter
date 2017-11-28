@@ -1,0 +1,23 @@
+<h2>Log in to your account</h2>
+
+<!-- Log in failure messages -->
+<ul>
+    {{#each messages}}
+        <li>{{this}}</li>
+    {{/each}}
+</ul>
+
+<form method="POST" action="/login">
+    Username: <input name="username"/>
+    Password: <input type="password" name="password"/>
+
+    <input type="submit" value="Sign up">
+</form>
+
+<p>If don't have an account, you can
+    <a href="/signup">Sign up here</a>
+</p>
+
+<h2>Log in with Twitter</h2>
+
+<p>Or you can <a href="/auth/twitter">use your Twitter account to sign in</a></p>
